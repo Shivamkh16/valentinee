@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #ffe6ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.gif {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+#message {
+    font-size: 26px;
+    color: #d6336c;
+    margin-bottom: 25px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#yesBtn {
+    background-color: #ff4d6d;
+    color: white;
+}
+
+#noBtn {
+    background-color: #adb5bd;
+    color: black;
+}
+body {
+    overflow: hidden;
+}
+
+/* HEART ANIMATION */
+.heart {
+    position: fixed;
+    bottom: -20px;
+    font-size: 24px;
+    animation: floatUp 4s linear forwards;
+    pointer-events: none;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+/* ---------- RESPONSIVE FOR MOBILE ---------- */
+@media (max-width: 600px) {
+
+    .gif {
+        width: 180px;
+    }
+
+    #message {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 18px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* ---------- SMOOTH ANIMATIONS ---------- */
+button {
+    transition: all 0.4s ease;
+}
+
+#yesBtn {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.08);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.credit {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #555;
+    opacity: 0.8;
+}
