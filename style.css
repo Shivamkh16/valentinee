@@ -93,9 +93,10 @@ body {
     }
 
     .buttons {
-        flex-direction: column;
-        gap: 15px;
-    }
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+}
 }
 
 /* ---------- SMOOTH ANIMATIONS ---------- */
@@ -124,3 +125,4 @@ button {
     color: #555;
     opacity: 0.8;
 }
+
